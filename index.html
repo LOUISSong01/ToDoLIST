@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css"
+      rel="stylesheet"
+    />
+
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&family=Montserrat:wght@300&display=swap");
+
+      body {
+        font-family: "Montserrat", sans-serif;
+      }
+
+      #clock {
+        font-weight: bold;
+      }
+    </style>
+    <link rel="stylesheet" href="CSS/style.css" />
+    <title>Louis Project</title>
+  </head>
+  <body>
+    <h2 id="clock"></h2>
+    <span><h1 id="greeting" class="hidden"></h1></span>
+    <span><button id="logout">LOG OUT</button></span>
+
+    <form class="hidden" id="login-form">
+      <input
+        id="login-input"
+        required
+        maxlength="15"
+        type="text"
+        placeholder="What is your name?"
+      />
+      <button id="btn">Log In</button>
+    </form>
+
+    <form id="todo-form">
+      <input
+        class="hidden"
+        id="todo-input"
+        type="text"
+        placeholder="What you need to do today?"
+        maxlength="25"
+      />
+    </form>
+
+    <ul id="todo-list"></ul>
+
+    <div id="quote">
+      <span id="literalquote"></span>
+      <span id="author"></span>
+    </div>
+
+    <div id="weather">
+      <span><img id="weather-icon" /></span>
+      <span id="temp"></span>
+      <span id="city"></span>
+    </div>
+
+    <div id="music-container">
+      <p id="music-icon"><i class="fa fa-music"></i></p>
+      <div id="music-btn-container">
+        <button id="stopbtn"><i class="fa fa-stop"></i></button>
+        <button id="btnplay"><i class="fa fa-play"></i></button>
+        <button id="pausebtn"><i class="fa fa-pause"></i></button>
+      </div>
+    </div>
+
+    <script type="text/javascript" src=JS/config.js"></script>
+    <script
+      src="https://kit.fontawesome.com/2c45cf27ca.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/howler@2.2.3/dist/howler.min.js"></script>
+    <script src="JS/greetings.js"></script>
+    <script src="JS/clock.js"></script>
+    <script src="JS/quotes.js"></script>
+    <script src="JS/background.js"></script>
+    <script src="JS/todo.js"></script>
+    <script src="JS/weather.js"></script>
+    <script src="JS/music.js"></script>
+  </body>
+</html>
