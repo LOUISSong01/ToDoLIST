@@ -2,7 +2,7 @@ const API_KEY = "e44018a2679d543a615a29f87e68ddec";
 function onGeoOk(position) {
   const lat = position.coords.latitude;
   const long = position.coords.longitude;
-  const url = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${long}&appid=${config.API_KEY}&units=metric`;
+  const url = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${long}&appid=${API_KEY}&units=metric`;
   const weatherIcon = document.querySelector("#weather-icon");
   const weather = document.querySelector("#weather span:nth-child(2)");
 
